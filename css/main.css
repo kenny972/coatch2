@@ -1,0 +1,687 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+  margin: 0;
+  padding: 0;
+}
+/*star of header*/
+
+/*css menu button*/
+#menu-accordeon {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+  width: 80px;
+}
+#menu-accordeon ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+#menu-accordeon li {
+   background-color:#729EBF; 
+   background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+   background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+   border-radius: 6px;
+   margin-bottom:2px;
+   box-shadow: 3px 3px 3px #999;
+   border:solid 1px #333A40
+}
+#menu-accordeon li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+#menu-accordeon a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:1.2em
+}
+
+#menu-accordeon li li:hover {
+   background: #999;
+}
+#menu-accordeon ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+#menu-accordeon li:hover li {
+  max-height: 15em;
+}
+/*en of the css menu button*/
+
+/*placement du boutton menu :menubutton*/
+.menubutton{
+  margin-left: 50px;
+}
+/*fin du placement du menu :menubutton*/
+
+nav a{
+    display: none;
+}
+
+/*div du logo*/
+.logoprepa{
+    background-color: #373837;
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+}
+/*fin de la div du logo*/
+
+/*figure du logo*/
+figure {
+    width: 22%;
+    margin: 0;
+}
+/*fin de la figure du logo*/
+
+/*image logo pour le mobile*/
+.prepa{
+    width:100%;
+}
+/*fin de l'image logo pour le mobile*/
+
+/*end of header*/
+
+
+/*paragraphe en dessous du carousel:Celui en display none est pour la version tablette*/
+.ilsparlentmobile{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ilsparlenttablette{
+    display: none;
+}
+/*fin du paragraphe en dessous du carousel*/
+
+
+/*span de couleur bleue pour le paragraphe en dessous du carousel*/
+span{
+    color: blue;
+}
+/*fin du paragraphe en dessous du carousel*/
+
+/*div contenant l'image de ceux qui parlent de nous*/
+.parlent{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+/*fin de la div contenant l'image de ceux qui parlent de nous*/
+
+
+.menubutton{
+  margin-left: 55px;
+}
+
+.coaching, .coaching1{
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.presentationdenous, .presentationdenous1{
+  text-align: center;
+  width: 90%;
+  margin:auto;
+  margin-bottom: 1.7em;
+}
+/*=============================================================================================================================
+==========================================================Page Tarifs mobile========================================================
+=============================================================================================================================*/
+
+/*Titre h3*/
+.tarifsh3{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 1em;
+}
+/*fin du titre*/
+
+/*Partie concernant le tableau des tarifs proposées*/
+table{
+  margin-top: 1em;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid blue;
+}
+
+td{
+  text-align: center;
+}
+
+thead{
+  text-align: center;
+}
+/*fin de la partie concernant le tableau*/
+
+/*paragphe d'accroche version mobile: le "ptarif" en display est pour la tablette*/
+.ptarif{
+  display: none;
+}
+
+.ptarifmob{
+  margin-top: 1.7em;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+/*fin du paragraphe d'accroche*/
+
+.figquatre{
+  display: none;
+}
+
+/*image de la version mobile: 3 personnes*/
+.figquatorze{
+  display: block;
+}
+
+.quatorze{
+  width: 320px;
+  height:250px;
+}
+/*fin de l'image de la version mobile*/
+
+
+/*=============================================================================================================================
+==========================================================Page contact mobile========================================================
+=============================================================================================================================*/
+/*titre de page*/
+.contacteznous{
+  margin-top: 1em;
+  text-align: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*fin du titre de page*/
+
+/* début de la Div formulaire*/
+.formulaire{
+  margin-top: 2em;
+  margin-left: 2.5em;
+}
+
+.buttondiv{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+
+button{
+  background-color: #373837;
+  color: white;
+  width: 97px;
+  height: 30px;
+  border-radius: black;
+  margin-right: 30px;
+}
+
+/*fin de la div*/
+
+
+/*=============================================================================================================================
+==========================================================Page "qui suis-je" mobile========================================================
+=============================================================================================================================/*/
+
+/*div presentation: contient des paragraphes, un h3, un p*/
+.presentation{
+  text-align: center;
+  margin-top: 2em;
+}
+/*fin de la div presentation*/
+
+
+/*Figure avec photo du coach */
+.hugofig{
+  margin-top: 1.6em;
+  margin-left: 60px;
+}
+/*fin de la figure*/
+
+/*star of footer*/
+footer{
+  background-color: gray;
+  height: 100%;
+}
+.articlefooter{
+  margin-top: 1em;
+  padding-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerp{
+  text-align: center;
+  color: white;
+}
+/*end of footer*/
+
+/**************************************************************************************************************
+********************************************Tablets***********************************************************/
+@media (min-width: 768px){
+
+/*star of the header*/
+nav a{
+    display: block;
+    padding: 1em;
+}
+
+
+.logoprepa{
+    background-color: #373837;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+.logoprepa nav{
+    display: flex;
+    align-items: center;
+}
+
+/*placement du boutton du menu: menubutton*/
+.menubutton{
+  margin-right: 1.5em;
+}
+/*fin du placement du boutton du menu*/
+
+/*end of the header*/
+
+/*DISPLAY NONE :paragraphe en dessous du colapse+image présente page tarif version mobile*/
+.ilsparlentmobile, .figquatorze{
+    display: none;
+}
+
+.ilsparlenttablette{
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+/*fin du paragraphe*/
+
+footer{
+  background-color: gray;
+  height: 100%;
+}
+.articlefooter{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+/*==================================================page tarif tablette============================================================*/
+
+/*div qui contient le tableau*/
+.tablediv{
+  display: flex;
+  justify-content: center;
+}
+
+td{
+  text-align: center;
+}
+/*fin de la div contenant le tableau*/
+
+
+/*paragraphe : avec nos prix attractifs...*/
+.ptarif{
+  display: block;
+    text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.ptarifmob{
+  display: none;
+}
+/*fin du paragraphe*/
+
+/*Image de la femme qui tape dans des aliments gras: le figqautre est la figure et le .quatre est l'image*/
+.figquatre{
+  display: block;
+}
+
+.quatre{
+  margin-top: 2em;
+  width: 450px;
+  height:350px;
+  float: left;
+  margin-left: 150px; 
+
+}
+/*fin de l'image*/
+
+
+.formulaire{
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.formulaire{
+  display: flex;
+  justify-content: center;
+  margin-left: 14%;
+}
+
+.buttondiv{
+  margin-top: 1em;
+}
+
+/*==================================================page presentation tablette============================================================*/
+
+
+
+
+
+
+ /*************************************************************************************************************
+********************************************Desktop********************************************************
+*/
+
+@media (min-width: 1280px){   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
